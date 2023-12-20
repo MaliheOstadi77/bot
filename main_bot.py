@@ -92,6 +92,7 @@ def some_function(message):
 
 @bot.message_handler(commands=['add'])  
 def some_function(message):
+     
      if flag_active==True:   
       bot.reply_to(message,"شناسه مورد نطز را وارد کنید .")
       bot.register_next_step_handler(message,save_chat_id)
